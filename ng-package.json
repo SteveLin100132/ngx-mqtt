@@ -1,0 +1,8 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/wistroni40-ngx-mqtt",
+  "allowedNonPeerDependencies": ["ng2-mqtt", "uuid", "@types/uuid"],
+  "lib": {
+    "entryFile": "src/public-api.ts"
+  }
+}
