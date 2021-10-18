@@ -29,7 +29,7 @@ import { NgMqttModule } from 'wistroni40-ngx-mqtt';
     ...,
     // 可以在載入 Module 時加入連線資訊，讓 APP 初始化時進行連線
     NgMqttModule.forRoot({
-      host: 'webap01.wks.wistron.com.cn',
+      host: 'localhost',
       port: 9001,
     }),
   ],
@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
 
   public async ngOnInit(): Promise<void> {
     // 也可以進到特定元件時才進行 MQTT 連線
-    const host = 'webap01.wks.wistron.com.cn';
+    const host = 'localhost';
     const port = 9001;
     this.mqtt.connect({ host, port });
 
